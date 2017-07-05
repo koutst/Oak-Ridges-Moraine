@@ -23,7 +23,7 @@ CREATE TABLE houses (
 INSERT INTO
   houses (id, address)
 VALUES
-  (1, "26th and Guerrero"), (2, "Dolores and Market");
+  (1, "65 East 96th Street"), (2, "103rd and Riverside"), (3, "101 and Riverside"), (4, '68th and West End');
 
 INSERT INTO
   humans (id, fname, lname, house_id)
