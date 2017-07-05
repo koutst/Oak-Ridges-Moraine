@@ -1,4 +1,4 @@
-require './lib/sql_object'
+require './lib/01_sql_object'
 
 class House  < SQLObject
   has_many :residents, class_name: :Human
