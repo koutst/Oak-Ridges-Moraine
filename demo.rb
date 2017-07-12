@@ -1,4 +1,7 @@
-require './lib/01_sql_object'
+require './lib/sql_object'
+require './lib/searchable'
+require './lib/associatable'
+require './lib/db_connection'
 
 class House  < SQLObject
   has_many :residents, class_name: :Human

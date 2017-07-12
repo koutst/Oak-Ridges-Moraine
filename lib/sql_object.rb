@@ -5,7 +5,6 @@ require 'active_support/inflector'
 class SQLObject
   def self.columns
     table = self.table_name
-    # debugger
     @columns ||= DBConnection.execute2(<<-SQL)
       SELECT
         *
