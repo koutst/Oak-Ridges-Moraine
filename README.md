@@ -18,3 +18,8 @@ Returns an array of objects from a specific table.
 Returns an object with specified id. If id is not found, returns nil.
 * `::where(params)`
 Returns an array of objects that match the params.
+
+* `#initialize(params={})`
+Creates new model using the params passed in. The params should be of the form key pointing to a value. The key will correspond to the column the value corresponds with the new value.
+* `#save`
+New or updated record is persisted to database
