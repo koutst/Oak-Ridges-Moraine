@@ -11,13 +11,10 @@ Running demo.rb sets up a Dog, Human and House model. A house has many humans, h
 2. In the root directory run "load 'dogs.rb'".
 3. Use the commands described below to mess around with the data.
 
+### Querying methods
 * `::all`
-* `::count`
-* `::destroy_all`
-* `::find`
-* `::first`
-* `::last`
-* `::where`
-* `#create`
-* `#save`
-* `#destroy`
+Returns an array of objects from a specific table.
+* `::find(id)`
+Returns an object with specified id. If id is not found, returns nil.
+* `::where(params)`
+Returns an array of objects that match the params.
