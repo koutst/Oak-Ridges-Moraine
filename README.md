@@ -26,5 +26,8 @@ New or updated record is persisted to database
 
 ### Associations
 * `belongs_to(name, options={})`
+  Creates a one to one association between two classes.
 * `has_many(name, options={})`
+  Creates a one to many relationship.
 * `has_one_through(name, through_class, source_class)`
+  Creates a one to one relationship through another class.
