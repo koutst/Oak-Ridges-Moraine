@@ -3,6 +3,16 @@ require './lib/searchable'
 require './lib/associatable'
 require './lib/db_connection'
 
+
+DEMO_DB = 'dogs.db'
+DEMO_SQL = 'dogs.sql'
+
+`rm '#{DEMO_DB}'`
+`cat '#{DEMO_SQL}' | sqlite3 '#{DEMO_DB}'`
+
+DBConnection.open(DEMO_DB)
+
+
 class House  < SQLObject
   has_many :residents, class_name: :Human
 
